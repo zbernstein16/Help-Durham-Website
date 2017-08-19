@@ -19,8 +19,8 @@ $(document).ready(function() {
     var result = JSON.parse(this.responseText);
     if (result.success === true) {
       var token = result.token;
-
-      localStorage.token = token;
+      localStorage.token = result.token;
+      localStorage.user = JSON.stringify(result.user);
       $(location).attr('href', './OrganizationPage.html')
     }
   }
