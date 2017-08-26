@@ -53,7 +53,7 @@ $(document).ready(function() {
   function generateEventLiHTML(event) {
 
 
-    return "<li>" + event.title + "</li>";
+    return "<li><details><summary>" + event.title + "</summary></details></li>";
   }
 
 })
